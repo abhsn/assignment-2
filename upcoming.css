@@ -179,6 +179,10 @@ main {
     margin-top: 10px;
 }
 
+.view-all {
+    display: none;
+}
+
 footer {
     background-color: #161616;
     width: 100%;

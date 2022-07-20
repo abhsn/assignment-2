@@ -64,13 +64,11 @@ header {
     background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
     background-size: 700%;
     background-position: left;
-    /* animation-play-state: paused; */
-    /* transition: background-position 0.5s; */
 }
 
 .banner-button:hover, .banner-button:focus {
     background-position: right;
-    animation: button-animation 2s infinite reverse;
+    animation: button-animation 2s infinite alternate;
     animation-play-state: running;
 }
 
