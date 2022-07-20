@@ -318,6 +318,10 @@ footer a {
         font-size: 14px;
         text-align: center;
         width: 90%;
+        height: 52px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     .banner-image img {
