@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+header {
+    width: 1321px;
+    height: 646px;
+    background-color: #161616;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.banner {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 65px;
+    gap: 35px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 70px;
+    width: 460px;
+    line-height: 80px;
+}
+
+.banner-paragraph {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    width: 506px;
+}
+
+.banner-button {
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    width: 135px;
+    font-size: 20px;
+    padding: 16px 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chevron-right {
+    margin-left: 20px;
+}
+
+.banner-image img {
+    float: right;
+    width: 581px;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+}
+
+main {
+    display: flex;
+    width: 1321px;
+    margin: auto;
+    column-gap: 24px;
+}
+
+
+/* starts from second column not first which is default */
+/* .second-column-items {
+    grid-column-start: 2;
+} */
+
+.main-section-nav {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section-nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* main section sidebar navigation */
+.main-section-nav a {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 252px;
+    height: 64px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#active-link {
+    color: white;
+    background-color: #DD0000;
+}
+
+.match-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.match-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    width: 312px;
+    height: 242px;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-team-images {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.match-teams {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.match-time {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #161616;
+    width: 100%;
+    height: 444px;
+    color: white;
+}
+
+footer h2 {
+    font-size: 40px;
+    font-weight: 600px;
+    text-align: center;
+    margin-top: 125px;
+}
+
+hr {
+    width: 1320px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 75px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-links{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links, .footer-socail {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socail a {
+    font-size: 35px;
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 833px) {   
+    header {
+        width: 334px;
+        height: 472px;
+        margin-top: 0;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .banner-text {
+        width: 258px;
+        gap: 10px;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .banner-button {
+        margin: auto;
+        padding: 12px 10px;
+    }
+
+    .banner-button a {
+        font-size: 20px;
+    }
+
+    .banner-title {
+        width: 90%;
+        margin: auto;
+        height: 66px;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .banner-paragraph {
+        margin: auto;
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .banner-image img {
+        width: 233px;
+        height: 245px;
+    }
+}
