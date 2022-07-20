@@ -81,7 +81,6 @@ main {
     column-gap: 24px;
 }
 
-
 .main-section-nav {
     background-color: #161616;
     width: 312px;
@@ -99,7 +98,6 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 
 /* main section sidebar navigation */
 .main-section-nav a {
@@ -267,7 +265,6 @@ footer a {
 }
 
 /* media queries */
-
 
 @media screen and (max-width: 576px) {
     body {
@@ -549,7 +546,6 @@ footer a {
         display: flex;
     }
 
-
     .footer-links a {
         font-size: 16px;
         font-weight: 500;
@@ -589,4 +585,3 @@ footer a {
         margin-bottom: 20px;
     }
 }
-
