@@ -147,6 +147,7 @@ main {
     background-color: #d65db1;
 }
 
+/* right side match schedule */
 .match-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
