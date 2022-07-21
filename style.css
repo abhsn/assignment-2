@@ -183,15 +183,23 @@ main {
 }
 
 .transfer-tag {
+    cursor: pointer;
     width: 100px;
     height: 32px;
     display: flex;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     font-size: 15px;
     font-weight: 500;
-    border: 1px solid #161616;
+    border: 1px solid rgb(22, 22, 22, 0.5);
+}
+
+.transfer-tag:hover {
+    background-color: rgb(0, 0, 0, 0.1);
 }
 
 .blog-title {
