@@ -403,6 +403,7 @@ footer a {
     .footer-links ul div {
         display: flex;
         flex-direction: column;
+        gap: 25px;
     }
 
     .footer-links li {
@@ -600,13 +601,13 @@ footer a {
         margin-right: 0;
     }
 
-    .footer-links-last-div {
+    /* .footer-links-last-div {
         margin: auto;
         width: 205px;
         margin-top: 20px;
-    }
+    } */
 
-    .footer-links div {
+    .footer-links ul div {
         display: flex;
         grid-column-start: 1;
         width: 40%;
@@ -614,6 +615,7 @@ footer a {
         justify-content: space-between;
         grid-column-end: -1;
     }
+
     .footer-social ul {
         gap: 50px;
     }
