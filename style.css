@@ -291,7 +291,7 @@ footer a {
 
 .footer-links ul, .footer-links div {
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
 
 .footer-social {
