@@ -365,9 +365,9 @@ footer a {
         font-size: 13px;
     }
 
-    .last-row-match-item {
+    /* .last-row-match-item {
         display: none;
-    }
+    } */
     
     .view-all-div {
         display: none;
@@ -529,9 +529,9 @@ footer a {
         font-size: 14px;
     }
 
-    .last-row-match-item {
+    /* .last-row-match-item {
         display: none;
-    }
+    } */
 
     /* button to display remaining cards in tablet mode */
     .view-all-div {
