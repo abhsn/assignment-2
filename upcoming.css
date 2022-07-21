@@ -1,3 +1,4 @@
+/* removes user-agent's default spacing */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,10 @@ body {
     flex-direction: column;
     gap: 130px;
 }
+
+/*---------------
+HEADER STARTS HERE
+-----------------*/
 
 header {
     width: 1321px;
@@ -59,7 +64,7 @@ header {
     font-size: 20px;
     padding: 16px 25px;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871, #ffc75f, #ff9671, #ff6f91, #d65db1, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    background-image: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
     background-size: 700%;
     background-position: left;
     border-radius: 10px;
@@ -79,6 +84,7 @@ header {
     }
 }
 
+/* Arrow icon on Watch Live button */
 .chevron-right {
     margin-left: 20px;
 }
@@ -91,6 +97,10 @@ header {
     right: 60px;
 }
 
+/*-------------
+MAIN STARS HERE
+---------------*/
+
 main {
     display: flex;
     width: 1321px;
@@ -98,6 +108,7 @@ main {
     column-gap: 24px;
 }
 
+/* main section side navigation bar */
 .main-section-nav {
     background-color: #161616;
     width: 312px;
@@ -117,7 +128,7 @@ main {
     justify-content: space-evenly;
 }
 
-/* main section sidebar navigation */
+/* main section side navigation anchors*/
 .main-section-nav a {
     border-radius: 10px;
     display: flex;
@@ -179,9 +190,13 @@ main {
     margin-top: 10px;
 }
 
-.view-all {
+.view-all-div {
     display: none;
 }
+
+/*---------------
+FOOTER STARTS HERE
+-----------------*/
 
 footer {
     background-color: #161616;
@@ -233,11 +248,13 @@ footer a {
     justify-content: center;
 }
 
+/* social media icons */
 .footer-social a {
     font-size: 35px;
 }
 
-/* media queries */
+/*--- media queries ---*/
+/* mobile device smaller than 577px */
 @media screen and (max-width: 576px) {
     body {
         gap: 30px;
@@ -339,11 +356,19 @@ footer a {
         justify-content: center;
     }
 
+    .match-teams {
+        font-size: 14px;
+    }
+
+    .match-time {
+        font-size: 13px;
+    }
+
     .last-row-match-item {
         display: none;
     }
     
-    .view-all {
+    .view-all-div {
         display: none;
     }
 
@@ -400,14 +425,19 @@ footer a {
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 577px) {
+
+/* display larger than or equal to 577px and smaller than 993px */
+@media screen and (max-width: 992px) and (min-width: 577px) {
     body {
         row-gap: 70px;
     }
+
+    /* banner */
     header {
         height: 398px;
         width: 95vw;
     }
+
     .banner {
         width: 100%;
         height: 398px;
@@ -443,14 +473,16 @@ footer a {
         width: 105px;
     }
 
+    /* Arrow icon on Watch Live button */
     .chevron-right {
         margin-left: 15px;
     }
 
+    /* main part */
     main {
         width: 95vw;
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: inherit;
     }
 
     .main-section-nav {
@@ -477,6 +509,7 @@ footer a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 6vw;
+        gap: inherit;
     }
     
     .match-card {
@@ -500,7 +533,7 @@ footer a {
     }
 
     /* button to display remaining cards in tablet mode */
-    .view-all {
+    .view-all-div {
         display: flex;
         justify-content: center;
         grid-column: span 2;
@@ -514,6 +547,7 @@ footer a {
         border-radius: 5px;
     }
 
+    /* footer */
     footer {
         width: 100%;
         /* padding-bottom: 0px; */
@@ -528,6 +562,10 @@ footer a {
         width: 85vw;
     }
 
+    footer li {
+        display: flex;
+    }
+
     .footer-links {
         width: 635px;
         flex-wrap: wrap;
@@ -539,10 +577,6 @@ footer a {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-    }
-
-    footer li {
-        display: flex;
     }
 
     .footer-links a {

@@ -1,3 +1,4 @@
+/* removes user-agent's default spacing */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,10 @@ body {
     flex-direction: column;
     gap: 130px;
 }
+
+/*----------------
+HEADER STARTS HERE
+-----------------*/
 
 header {
     width: 1321px;
@@ -81,6 +86,7 @@ header {
     }
 }
 
+/* Arrow icon on Watch Live button */
 .chevron-right {
     margin-left: 20px;
 }
@@ -93,6 +99,10 @@ header {
     right: 60px;
 }
 
+/*##############
+MAIN STARTS HERE
+##############*/
+
 main {
     display: flex;
     width: 1321px;
@@ -100,6 +110,7 @@ main {
     column-gap: 24px;
 }
 
+/* main section side navigation bar */
 .main-section-nav {
     background-color: #161616;
     width: 312px;
@@ -118,7 +129,7 @@ main {
     justify-content: space-evenly;
 }
 
-/* main section sidebar navigation */
+/* main section side navigation anchors*/
 .main-section-nav a {
     border-radius: 10px;
     display: flex;
@@ -203,7 +214,8 @@ main {
     margin-right: 30px;
 }
 
-.view-all {
+/* button to view hidden items */
+.view-all-div {
     display: none;
     justify-content: center;
     align-items: center;
@@ -216,6 +228,10 @@ main {
     text-decoration: none;
     border-radius: 5px;
 }
+
+/*----------------
+FOOTER STARTS HERE
+-----------------*/
 
 footer {
     background-color: #161616;
@@ -283,8 +299,8 @@ footer a {
     color: #dad6d6;
 }
 
-/* media queries */
-
+/*--- media queries ---*/
+/* mobile devices smaller than 577 px */
 @media screen and (max-width: 576px) {
     body {
         gap: 24px;
@@ -445,14 +461,17 @@ footer a {
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 577px) {
+/* tablet smaller than 993px and larger than or equal to 577px */
+@media screen and (max-width: 992px) and (min-width: 577px) {
     body {
         row-gap: 70px;
     }
+
     header {
         height: 398px;
         width: 95vw;
     }
+
     .banner {
         width: 100%;
         height: 398px;
@@ -495,7 +514,7 @@ footer a {
     main {
         width: 95vw;
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: inherit;
     }
 
     .main-section-nav {
@@ -521,8 +540,9 @@ footer a {
     .blog-cards {
         margin: auto;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 22px;
-        row-gap: 22px;
+        /* column-gap: 22px;
+        row-gap: 22px; */
+        gap: inherit;
     }
 
     .blog-card {
@@ -539,7 +559,7 @@ footer a {
     }
 
     /* button to display remaining cards in tablet mode */
-    .view-all {
+    .view-all-div {
         display: flex;
     }
 
