@@ -243,6 +243,11 @@ footer a {
     justify-content: center;
 }
 
+.footer-links div {
+    display: flex;
+    gap: 25px;
+}
+
 .footer-links, .footer-social {
     margin-top: 35px;
     display: flex;
