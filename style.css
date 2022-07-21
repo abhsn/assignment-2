@@ -289,7 +289,12 @@ footer a {
     gap: 45px;
 }
 
-.footer-links ul, .footer-links div {
+.footer-links ul {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links div {
     display: flex;
     gap: 50px;
 }
